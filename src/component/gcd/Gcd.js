@@ -9,7 +9,6 @@ function Gcd(props) {
     const [result, setResult] = useState(null);
 
     const computeGcd = () => {
-        debugger
         if (one && two) {
             let c1 = [one, two], c2 = [0], c3 = [0, 1];
             let i = 0;

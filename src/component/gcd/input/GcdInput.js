@@ -8,12 +8,12 @@ function GcdInput({setOne,setTwo,computeGcd}) {
         <div className={"gcdInputContainer"}>
             <h1>GCD</h1>
             <h2>gcd(first,second)</h2>
-            <TextField className="input" label={"One"}
+            <TextField className="input" label={"First"}
                        type={"number"}
                        onChange={e=>setOne(parseInt(e.target.value))}
 
             />
-            <TextField className="input" label={"Two"}
+            <TextField className="input" label={"Second"}
                        type={"number"}
                        onChange={e=>setTwo(parseInt(e.target.value))}
             />
@@ -22,7 +22,7 @@ function GcdInput({setOne,setTwo,computeGcd}) {
                     color="primary"
                     onClick={computeGcd}
             >
-                Primary
+                Compute Gcd
             </Button>
         </div>
     );

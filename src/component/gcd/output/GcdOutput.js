@@ -1,6 +1,9 @@
 import React from 'react';
 import "./GcdOutput.scss"
 function GcdOutput({result}) {
+    const mod = (n,k=26)=>((n % k) + k) % k;
+
+
     if(result){
         let {c1,c2,c3} = result;
 
@@ -19,6 +22,9 @@ function GcdOutput({result}) {
                     }
                     </tbody>
                 </table>
+                <div>
+                    <p>{c1[1]}^-1 mod({c1[0]}) = {mod(c3[c3.length-1],c1[0])}</p>
+                </div>
             </div>
         );
     }else{

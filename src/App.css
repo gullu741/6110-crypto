@@ -1,0 +1,23 @@
+
+.app{
+    display: flex;
+    flex-direction: row;
+    width: 100%
+}
+.sidenav{
+    width: 20%;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+.left{
+    width: 50%;
+    height: 100vh;
+}
+.right{
+    width: 50%;
+    height: 100vh;
+}
+
